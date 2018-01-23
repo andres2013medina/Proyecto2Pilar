@@ -1,0 +1,80 @@
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <div class="container">
+  <form form  >
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s1">
+        <input  placeholder="Nombre Plato" type="text" id="Nombre" required 
+        [(ngModel)]="model.nombre" name="nombre"  >
+      </div>
+      <div class="input-field col s2">
+        <input  placeholder="Pais" type="text"  id="Pais"required
+        [(ngModel)]="model.pais" name="pais" >
+      </div>
+    </div>
+  </form>
+</div>
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s7">
+        <input  placeholder="dificultad" type="number" id="dificultad" required 
+        [(ngModel)]="model.dificultad" name="dificultad"  >
+      </div>
+      <div class="input-field col s8">
+        <input  placeholder="Preparacion"   type="text" id="Preparacion" required 
+        [(ngModel)]="model.preparacion" name="preparacion" >
+      </div>
+    </div>
+  </form>
+</div>
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <input  placeholder="carbohidratos x cada 100 gr" type="number" id="carbohidratos" required 
+        [(ngModel)]="model.carbohidratos" name="carbohidratos" >
+      </div>
+      <div class="input-field col s6">
+        <input  placeholder="Proteinas x cada 100 gr"  type="number" id="Proteina" required 
+        [(ngModel)]="model.proteina" name="proteina"  >
+      </div>
+      <div class="input-field col s6">
+        <input  placeholder="grasa x cada 100 gr"  type="number" id="grasa" required 
+        [(ngModel)]="model.grasa" name="grasa" >
+      </div>
+    </div>
+  </form>
+</div>
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <input  placeholder="Ingrediente" id="Ingrediente" required 
+        [(ngModel)]="model.ingrediente" name="ingrediente" >
+      </div>
+    </div>
+  </form>
+</div>
+
+
+  <div  class="file-field input-field">
+    <div class="btn">
+      <span>Foto</span>
+      <input type="file">
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text">
+    </div>
+  </div>
+
+  <a  button (click)="onSubmit()" class="waves-effect waves-light btn">Agregar</a>
+</form>
+</div>
+
+
+

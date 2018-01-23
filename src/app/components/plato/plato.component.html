@@ -1,0 +1,67 @@
+<p>
+  plato works!
+</p>
+
+<!-- Detalles de la plato -->
+<div *ngIf="plato">
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+             
+  
+  <h2>{{plato.nombre | uppercase}} </h2>
+
+  <table>
+    <thead>
+      <tr>
+          <th>Nombre</th>
+          <th>Dificultad</th>
+          <th>Pais</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>{{plato.nombre}}</td>
+        <td>{{plato.dificultad}}</td>
+        <td>{{plato.pais}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+          <th>Proteinas</th>
+          <th>carbohidratos</th>
+          <th>Grasas</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>{{plato.proteina}}</td>
+        <td>{{plato.carbohidratos}}</td>
+        <td>{{plato.grasa}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+          <th>Ingredientes</th>
+          <th>Preparacion</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{plato.ingrediente}}</td>
+        <td>{{plato.preparacion}}</td>
+      </tr>
+    </tbody>
+  </table>
+<br>
+  <img src={{plato.foto}} height = "200" width = "200" >

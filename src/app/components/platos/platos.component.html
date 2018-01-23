@@ -1,0 +1,17 @@
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">  <!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+
+<h2>Comidas</h2>
+<br>
+<ul  class="list-group">
+    <li *ngFor="let plato of platos"  class="list-group-item">
+      <a routerLink="/plato/{{plato.$key}}">{{plato.nombre}}</a>
+    </li>
+
+</ul>
+<br>
+<ul>
+    <input type="button"  class="btn btn-outline-success my-2 my-sm-0" value="Agregar Comida" [routerLink]="['/add-plato']">
+</ul>
